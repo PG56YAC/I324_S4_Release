@@ -109,7 +109,7 @@ const MISSIONS = [
             '> — Léa',
             '',
             `Complétez \`release.yml\` : construire l'image avec le \`Dockerfile\` du dépôt et la publier dans \`${IMAGE}\`, avec les étiquettes \`1.0.0\`, \`1.0\`, \`1\` et \`latest\`.`,
-            'Indice : les actions officielles de Docker (`docker/metadata-action`, `docker/build-push-action`) calculent ces étiquettes à partir du tag. Puis publiez la version `v1.0.1` : un tag déjà poussé garde l'ancien workflow, il faut un nouveau tag.',
+            'Indice : les actions officielles de Docker (`docker/metadata-action`, `docker/build-push-action`) calculent ces étiquettes à partir du tag. Puis publiez la version `v1.0.1` : un tag déjà poussé garde l\'ancien workflow, il faut un nouveau tag.',
         ],
         verifier: async () => {
             const imgs = await D.images();
